@@ -9,7 +9,6 @@ function LoginPage() {
                     <div className='row' style={{ padding: '15px' }}>
                         {<div className='col-md-6'>
                             <img src='./assets/loginImage.png' className="centerImage" />
-
                         </div>}
                         <div className='col-md-6' >
                             <div className='row' style={{ textAlign: "center", paddingTop: "50px" }}>
@@ -51,7 +50,6 @@ function LoginPage() {
             console.log(" Result ", res)
         })
     }
-
 
 }
 
