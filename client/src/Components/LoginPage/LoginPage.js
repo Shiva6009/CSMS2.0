@@ -1,9 +1,11 @@
 import './LoginPage.css'
 import axios from 'axios';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 
 function LoginPage() {
-    return (
-        <>
+
+    const navigate = useNavigate()
+    return (<>
         <div className='conatiner-fluid backgroundDiv'>
             <div className='centerDiv'>
                 <div className='container-fluid'>
@@ -28,29 +30,30 @@ function LoginPage() {
                                 <div style={{ marginTop: "30px" }}>
                                     <button onClick={checkLoginVerification} className='loginButton' > Log In</button>
                                 </div>
-
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
-        </>
+    </>
     )
 
 
     function checkLoginVerification() {
         console.log(" Button CLicked ")
-        var data =
-        {
-            employeeID: 'Priyam',
-            password: 'Admin@123'
-        }
-        axios.post('http://localhost:2000/test', data
-        ).then(res => {
-            console.log(" Result ", res)
-        })
+        navigate('/dashboard')
+
+
+        // var data =
+        // {
+        //     employeeID: 'Priyam',
+        //     password: 'Admin@123'
+        // }
+        // axios.post('http://localhost:2000/test', data
+        // ).then(res => {
+        //     console.log(" Result ", res)
+        // })
     }
 
 }
