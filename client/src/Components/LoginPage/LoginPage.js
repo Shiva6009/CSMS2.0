@@ -3,6 +3,7 @@ import axios from 'axios';
 
 function LoginPage() {
     return (
+        <>
         <div className='conatiner-fluid backgroundDiv'>
             <div className='centerDiv'>
                 <div className='container-fluid'>
@@ -36,6 +37,7 @@ function LoginPage() {
                 </div>
             </div>
         </div>
+        </>
     )
 
 
